@@ -9,7 +9,7 @@ computer = player[randint(0,2)]
 #game
 game = False
 while game == False:
-    player = input("rock, paper, scissors?\n")
+    player = input("rock, paper, scissors, gg?\n")
     if player == computer:
         print("Tie!")
     elif player == "rock":
@@ -27,6 +27,8 @@ while game == False:
             print("Computer wins!") 
         else:
             print("You win!\n")
+    elif player == "gg":
+        break;
     else:
         print("Not a valid answer\n")
 
